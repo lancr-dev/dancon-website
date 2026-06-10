@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dancon</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <p class="logo">Logo<span>Dancon</span></p>
+      <div class="side-bar">
+        <button class="close-side-bar" onclick="closeSideBar()">
+          <img
+            src="icons/close-menu.png"
+            alt="menu/icon"
+            height="30px"
+            width="30px"
+          />
+        </button>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICE</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">CONTACT</a>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="hide-on-mobile">HOME</a>
+        <a href="#" class="hide-on-mobile">ABOUT</a>
+        <a href="#" class="hide-on-mobile">SERVICE</a>
+        <a href="#" class="hide-on-mobile">PROJECTS</a>
+        <a href="#" class="hide-on-mobile">CONTACT</a>
+        <button class="side-bar-btn" onclick="openSideBar()">
+          <img
+            src="icons/menu.png"
+            alt="menu/icon"
+            height="25px"
+            width="25px"
+          />
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <h1>Leading The Progress, A Cubic at A Time</h1>
+      <p>
+        Trusted supplier of quality ready-mix concrete and construction
+        materials serving in Cavite, Laguna, Batangas, Paranaque, Muntinlupa and
+        all municipalities of Cavite.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn-1">LEARN ABOUT US!</button>
+        <button class="btn-2">OUR PROJECTS</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
