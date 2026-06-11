@@ -13,37 +13,36 @@
   <body>
     <nav class="nav-bar">
       <p class="logo">Logo<span>Dancon</span></p>
-      <div class="side-bar">
-        <button class="close-side-bar" onclick="closeSideBar()">
-          <img
-            src="icons/close-menu.png"
-            alt="menu/icon"
-            height="30px"
-            width="30px"
-          />
-        </button>
-        <a href="#">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#">SERVICE</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">CONTACT</a>
-      </div>
+
       <div class="nav-links">
-        <a href="#" class="hide-on-mobile">HOME</a>
+        <a href="#home" class="hide-on-mobile">HOME</a>
         <a href="#about" class="hide-on-mobile">ABOUT</a>
-        <a href="#" class="hide-on-mobile">SERVICE</a>
+        <a href="#services" class="hide-on-mobile">SERVICE</a>
         <a href="#" class="hide-on-mobile">PROJECTS</a>
         <a href="#" class="hide-on-mobile">CONTACT</a>
+
         <button class="side-bar-btn" onclick="openSideBar()">
-          <img
-            src="icons/menu.png"
-            alt="menu/icon"
-            height="25px"
-            width="25px"
-          />
+          <img src="icons/menu.png" alt="menu/icon" width="25" height="25" />
         </button>
       </div>
     </nav>
+
+    <div class="side-bar">
+      <button class="close-side-bar" onclick="closeSideBar()">
+        <img
+          src="icons/close-menu.png"
+          alt="menu/icon"
+          width="30"
+          height="30"
+        />
+      </button>
+
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#services">SERVICES</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">CONTACT</a>
+    </div>
 
     <section class="hero" id="home">
       <h1>Leading The Progress, A Cubic at A Time</h1>
@@ -76,7 +75,62 @@
             Batangas, Muntinlupa, Parañaque and all municipalities of Cavite.
           </p>
         </div>
-        <div class="about-img"></div>
+        <img src="images/hero-section.png" alt="image/png" class="about-img" />
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services-title">Our Services</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/hero-section.png" alt="Ready-Mix Concrete" />
+            </div>
+            <div class="service-content">
+              <h3>Ready-Mix Concrete</h3>
+              <p>
+                High-quality concrete solutions for residential, commercial, and
+                industrial projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/hero-section.png" alt="Concrete Delivery" />
+            </div>
+            <div class="service-content">
+              <h3>Concrete Delivery</h3>
+              <p>Reliable and on-time delivery to project sites.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/hero-section.png" alt="Construction Supply" />
+            </div>
+            <div class="service-content">
+              <h3>Construction Supply</h3>
+              <p>
+                Quality construction materials sourced from trusted suppliers.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/hero-section.png" alt="Project Support" />
+            </div>
+            <div class="service-content">
+              <h3>Project Support</h3>
+              <p>Technical assistance and after-sales support.</p>
+            </div>
+          </div>
+
+          <!-- Add more cards here -->
+        </div>
       </div>
     </section>
     <script src="script.js"></script>

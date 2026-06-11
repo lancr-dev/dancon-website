@@ -1,11 +1,9 @@
 function openSideBar() {
-  const sideBar = document.querySelector('.side-bar');
-  sideBar.style.display = 'flex';
+  document.querySelector('.side-bar').classList.add('active');
 }
 
 function closeSideBar() {
-  const sideBar = document.querySelector('.side-bar');
-  sideBar.style.display = 'none';
+  document.querySelector('.side-bar').classList.remove('active');
 }
 
 const navbar = document.querySelector('.nav-bar');
