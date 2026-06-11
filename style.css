@@ -20,11 +20,30 @@ body {
 .nav-bar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 30px;
+
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-bar.scrolled {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  padding: 12px 30px;
 }
 
 .logo {
@@ -44,11 +63,12 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease;
   font-size: 1.1rem;
   font-weight: bold;
   color: var(--color-secondary);
 }
+
 .nav-links a:hover {
   color: var(--color-primary);
 }
@@ -76,21 +96,28 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+
   position: fixed;
   top: 0;
   right: 0;
-  padding: 40px 50px;
-  z-index: 1;
+
   height: 100%;
-  box-shadow: -2px 0 10px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  padding: 40px 50px;
+
+  z-index: 1001;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .side-bar a {
   text-decoration: none;
   font-weight: bold;
   color: var(--color-secondary);
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .side-bar a:hover {
