@@ -16,7 +16,7 @@ section {
 }
 
 body {
-  min-height: 100dvh;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
@@ -98,7 +98,7 @@ body {
   right: 0;
 
   width: min(320px, 80vw);
-  height: 100dvh;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -158,7 +158,7 @@ body {
 }
 
 .hero {
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +220,7 @@ body {
 }
 
 .about {
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 8vw, 6rem);
@@ -278,7 +278,7 @@ body {
 }
 
 .services {
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 
