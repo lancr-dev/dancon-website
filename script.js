@@ -16,24 +16,21 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const decorationTop = document.querySelector('.decoration-top');
 const servicesSection = document.querySelector('.services');
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        servicesSection.classList.add('show-decoration');
-      } else {
-        servicesSection.classList.remove('show-decoration');
-      }
+      servicesSection.classList.toggle('show-decoration', entry.isIntersecting);
     });
   },
   {
-    threshold: 0.25,
+    rootMargin: '0px 0px -100px 0px',
   },
 );
 
-observer.observe(servicesSection);
+observer.observe(document.querySelector('.decoration-top'));
 
 const counters = document.querySelectorAll('.counter');
 const aboutSection = document.querySelector('.about');

@@ -405,8 +405,8 @@ body {
   transform: translateX(120px);
 
   transition:
-    opacity 1.5s ease,
-    transform 2.5s ease;
+    opacity 1s ease,
+    transform 1s ease;
 }
 
 .decoration-top {
@@ -433,6 +433,10 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 
   transition-delay: 0.15s;
+
+  transition:
+    opacity 1s ease,
+    transform 2s ease;
 }
 
 .services.show-decoration .service-decoration {
