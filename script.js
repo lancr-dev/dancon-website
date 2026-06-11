@@ -34,3 +34,52 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(servicesSection);
+
+const counters = document.querySelectorAll('.counter');
+const aboutSection = document.querySelector('.about');
+
+let hasAnimated = false;
+
+function animateCounter(counter) {
+  const target = Number(counter.dataset.target);
+
+  let current = 0;
+  const increment = target / 100;
+
+  const updateCounter = () => {
+    current += increment;
+
+    if (current < target) {
+      counter.textContent = Math.floor(current);
+      requestAnimationFrame(updateCounter);
+    } else {
+      counter.textContent = target;
+    }
+  };
+
+  updateCounter();
+}
+
+const statsObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !hasAnimated) {
+        counters.forEach(animateCounter);
+        hasAnimated = true;
+      }
+
+      if (!entry.isIntersecting) {
+        hasAnimated = false;
+
+        counters.forEach((counter) => {
+          counter.textContent = '0';
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  },
+);
+
+statsObserver.observe(aboutSection);
