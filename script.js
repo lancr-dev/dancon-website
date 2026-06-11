@@ -15,3 +15,22 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+const servicesSection = document.querySelector('.services');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        servicesSection.classList.add('show-decoration');
+      } else {
+        servicesSection.classList.remove('show-decoration');
+      }
+    });
+  },
+  {
+    threshold: 0.25,
+  },
+);
+
+observer.observe(servicesSection);
