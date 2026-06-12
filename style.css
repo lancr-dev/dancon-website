@@ -163,7 +163,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('images/hero-section.png');
+  background-image: url('images/bg-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ body {
   align-items: center;
 
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 3vw, 1.5rem);
-  background-image: url('images/background-2.png');
+  background-image: url('images/bg-2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -451,9 +451,12 @@ body {
   align-items: center;
   gap: clamp(2rem, 5vw, 6rem);
   padding: clamp(2rem, 5vw, 5rem);
+  background-image: url('images/bg-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Left Side */
 .contact-left-box h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.2;
@@ -466,7 +469,6 @@ body {
   line-height: 1.6;
 }
 
-/* Right Side */
 .contact-right-box {
   display: flex;
   flex-direction: column;
@@ -481,7 +483,6 @@ body {
   height: auto;
 }
 
-/* Contact Items */
 .media {
   display: flex;
   align-items: center;
