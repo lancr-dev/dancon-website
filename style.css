@@ -283,7 +283,7 @@ body {
   align-items: center;
 
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 3vw, 1.5rem);
-  background-image: url('images/dancon\ \(2\).png');
+  background-image: url('images/background-2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
