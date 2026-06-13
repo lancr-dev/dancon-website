@@ -81,29 +81,24 @@ const statsObserver = new IntersectionObserver(
 
 statsObserver.observe(aboutSection);
 
-const equipmentSection = document.querySelector('.equipment');
+//
+const animatedItems = document.querySelectorAll('.animate-item');
 
-const equipmentItems = document.querySelectorAll('.equipment .animate-item');
-
-const equipmentObserver = new IntersectionObserver(
+const animationObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        equipmentItems.forEach((item, index) => {
-          setTimeout(() => {
-            item.classList.add('show');
-          }, index * 200);
-        });
+        entry.target.classList.add('show');
       } else {
-        equipmentItems.forEach((item) => {
-          item.classList.remove('show');
-        });
+        entry.target.classList.remove('show');
       }
     });
   },
   {
-    threshold: 0.25,
+    threshold: 0.2,
   },
 );
 
-equipmentObserver.observe(equipmentSection);
+animatedItems.forEach((item) => {
+  animationObserver.observe(item);
+});
