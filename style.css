@@ -585,6 +585,22 @@ footer {
   gap: 50px;
 }
 
+.footer-line1,
+.footer-line2 {
+  background-color: black;
+  width: 100%;
+}
+
+.footer-line1 {
+  height: 25px;
+  background-color: var(--color-primary);
+}
+
+.footer-line2 {
+  height: 15px;
+  background-color: var(--color-background);
+}
+
 footer h1 {
   color: var(--color-primary);
 }
