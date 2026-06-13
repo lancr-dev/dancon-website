@@ -16,6 +16,33 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a, .side-bar a');
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const currentSection = entry.target.id;
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+
+        link.classList.toggle('active', href === `#${currentSection}`);
+      });
+    });
+  },
+  {
+    rootMargin: '-40% 0px -40% 0px',
+    threshold: 0,
+  },
+);
+
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});
+
 const decorationTop = document.querySelector('.decoration-top');
 const servicesSection = document.querySelector('.services');
 
