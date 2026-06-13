@@ -512,24 +512,6 @@ body {
   color: #444;
 }
 
-@media (max-width: 900px) {
-  .equipment-content {
-    grid-template-columns: 1fr;
-
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  .equipment-image {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .equipment-details {
-    text-align: center;
-  }
-}
-
 .projects {
   min-height: 100vh;
 
@@ -773,6 +755,12 @@ footer h1 {
   transition-delay: 0.4s;
 }
 
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .about-bottom-box {
     flex-direction: column;
@@ -788,9 +776,21 @@ footer h1 {
   }
 }
 
-@media (max-width: 1200px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 900px) {
+  .equipment-content {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .equipment-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .equipment-details {
+    text-align: center;
   }
 }
 

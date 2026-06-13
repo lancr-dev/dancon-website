@@ -81,7 +81,6 @@ const statsObserver = new IntersectionObserver(
 
 statsObserver.observe(aboutSection);
 
-//
 const animatedItems = document.querySelectorAll('.animate-item');
 
 const animationObserver = new IntersectionObserver(
