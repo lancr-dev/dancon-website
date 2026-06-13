@@ -80,3 +80,30 @@ const statsObserver = new IntersectionObserver(
 );
 
 statsObserver.observe(aboutSection);
+
+const equipmentSection = document.querySelector('.equipment');
+
+const equipmentItems = document.querySelectorAll('.equipment .animate-item');
+
+const equipmentObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        equipmentItems.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add('show');
+          }, index * 200);
+        });
+      } else {
+        equipmentItems.forEach((item) => {
+          item.classList.remove('show');
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.25,
+  },
+);
+
+equipmentObserver.observe(equipmentSection);
