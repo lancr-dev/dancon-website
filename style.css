@@ -444,6 +444,82 @@ body {
   transform: translateX(0);
 }
 
+.projects {
+  min-height: 100vh;
+
+  padding: clamp(4rem, 8vw, 6rem) clamp(1rem, 3vw, 1.5rem);
+
+  background: #f5f5f5;
+}
+
+.projects-title {
+  text-align: center;
+
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: clamp(1rem, 2vw, 2rem);
+
+  overflow: visible;
+}
+
+.project-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    opacity 0.4s ease;
+
+  z-index: 1;
+}
+
+.project-card img {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projects-grid:hover .project-card {
+    opacity: 0.5;
+  }
+
+  .projects-grid .project-card:hover {
+    opacity: 1;
+
+    transform: scale(2);
+
+    z-index: 100;
+
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  .projects-grid .project-card:hover img {
+    transform: scale(1.1);
+  }
+}
+
 .contact {
   min-height: 100vh;
   display: flex;
@@ -582,6 +658,12 @@ footer h1 {
   }
 }
 
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .side-bar-btn {
     display: flex;
@@ -604,6 +686,10 @@ footer h1 {
   .about-details {
     max-width: 100%;
     padding-inline: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact {
@@ -637,6 +723,12 @@ footer h1 {
 
   footer h1 {
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
