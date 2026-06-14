@@ -592,7 +592,7 @@ body {
   .projects-grid .project-card:hover {
     opacity: 1;
 
-    transform: scale(2);
+    transform: scale(1.2);
 
     z-index: 100;
 
