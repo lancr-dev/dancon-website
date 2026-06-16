@@ -502,10 +502,11 @@ body {
 
 .equipment-image img {
   width: 100%;
-  aspect-ratio: 4 / 4;
+  aspect-ratio: 5 / 4;
 
   display: block;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .equipment-details {
@@ -583,6 +584,27 @@ body {
   object-fit: cover;
 
   transition: transform 0.4s ease;
+}
+
+.project-card h3 {
+  position: absolute;
+  bottom: clamp(0.5rem, 1vw, 1rem);
+  left: clamp(0.5rem, 1vw, 1rem);
+
+  margin: 0;
+  padding: clamp(0.4rem, 0.8vw, 0.8rem) clamp(0.8rem, 1.2vw, 1.2rem);
+
+  background: rgba(255, 255, 255, 0.61);
+  color: var(--color-text);
+
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  font-weight: 600;
+  line-height: 1.2;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  z-index: 2;
 }
 
 @media (hover: hover) and (pointer: fine) {
