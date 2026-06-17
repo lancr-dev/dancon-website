@@ -33,6 +33,11 @@ body {
   text-align: center;
 }
 
+span {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  color: var(--color-primary);
+}
+
 .portfolio-slider-wrapper {
   display: flex;
   align-items: center;
