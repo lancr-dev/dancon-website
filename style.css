@@ -361,6 +361,8 @@ body {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+
+  border-radius: 20px;
 }
 
 .service-card:hover {
@@ -581,6 +583,7 @@ body {
 
   overflow: hidden;
 
+  border-bottom: 7px solid var(--color-primary);
   border-radius: 1rem;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
