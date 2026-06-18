@@ -711,6 +711,17 @@ footer {
   gap: 50px;
 }
 
+.footer-logo-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-image img {
+  width: 40px;
+  border-radius: 100%;
+}
+
 .footer-line1,
 .footer-line2 {
   background-color: black;
@@ -909,8 +920,8 @@ footer h1 {
     align-items: center;
   }
 
-  footer h1 {
-    text-align: center;
+  .footer-logo-image {
+    justify-content: center;
   }
 }
 
