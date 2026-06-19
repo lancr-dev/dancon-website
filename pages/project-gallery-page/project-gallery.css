@@ -15,6 +15,27 @@ body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+.back-btn-container {
+  padding: 20px 20px;
+}
+
+.back-btn-container button {
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgb(114, 114, 114);
+  transition: 0.5s ease;
+}
+
+.back-btn-container button:hover {
+  transform: scale(1.1);
 }
 
 .portfolio {
@@ -22,7 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  padding: clamp(4rem, 8vw, 6rem) clamp(2rem, 8vw, 8rem);
+  padding: clamp(1rem, 3vw, 3rem) clamp(2rem, 8vw, 8rem);
 
   background: #f5f5f5;
 }
@@ -147,5 +168,10 @@ span {
 
   .portfolio-track {
     gap: 10px;
+  }
+
+  .back-btn-container button {
+    padding: 8px 15px;
+    font-size: 0.7rem;
   }
 }
