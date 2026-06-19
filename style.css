@@ -721,6 +721,11 @@ body {
   line-height: 1.5;
 }
 
+.media a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
 * {
   margin: 0;
   padding: 0;
