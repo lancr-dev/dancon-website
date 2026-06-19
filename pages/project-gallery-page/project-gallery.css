@@ -27,14 +27,26 @@ body {
   background: #f5f5f5;
 }
 
+.portfolio-title img {
+  width: clamp(2.5rem, 5vw, 4rem);
+  border-radius: 100%;
+  border: 2px solid var(--color-secondary);
+}
+
 .title {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  margin-bottom: 3rem;
-  text-align: center;
+  font-size: clamp(1.3rem, 3vw, 3rem);
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 10px;
 }
 
 span {
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.3rem, 3vw, 3rem);
   color: var(--color-primary);
 }
 
@@ -43,7 +55,7 @@ span {
   align-items: center;
   gap: clamp(0.5rem, 2vw, 2rem);
 
-  margin-bottom: clamp(2rem, 5vw, 4rem);
+  margin-bottom: clamp(2rem, 5vw, 2.5rem);
 }
 
 .portfolio-slider {
@@ -101,14 +113,14 @@ span {
 }
 
 .portfolio-content h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.2rem, 3vw, 3rem);
   font-weight: 800;
   margin-bottom: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .portfolio-content p {
-  font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
   line-height: 1.7;
   color: #444;
   margin-bottom: 1rem;
