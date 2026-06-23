@@ -973,6 +973,10 @@ footer {
   .footer-logo-image {
     justify-content: center;
   }
+
+  .contact-info {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
