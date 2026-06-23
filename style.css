@@ -880,6 +880,15 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .side-bar-btn {
+    display: flex;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .about-bottom-box {
     flex-direction: column;
@@ -914,12 +923,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .side-bar-btn {
-    display: flex;
+  .hero p {
+    font-weight: 500;
   }
-  .hide-on-mobile {
-    display: none;
-  }
+
   .about-img {
     display: none;
   }
