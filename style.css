@@ -598,6 +598,15 @@ body {
   margin-bottom: clamp(2rem, 5vw, 4rem);
 }
 
+.projects-paragraph {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-paragraph span {
+  font-weight: bold;
+}
+
 .projects-grid {
   display: grid;
 
