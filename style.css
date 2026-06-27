@@ -806,6 +806,7 @@ footer {
 
 .footer-media img {
   width: 20px;
+  display: block;
 }
 
 .common-links {
