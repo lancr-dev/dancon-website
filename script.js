@@ -6,6 +6,14 @@ function closeSideBar() {
   document.querySelector('.side-bar').classList.remove('active');
 }
 
+const sideBarLinks = document.querySelectorAll('.side-bar a');
+
+sideBarLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    closeSideBar();
+  });
+});
+
 const navbar = document.querySelector('.nav-bar');
 
 window.addEventListener('scroll', () => {
